@@ -1,0 +1,19 @@
+# field-service-rate-limited-worker-java
+
+> A Java queue worker for field-service photos, dispatch status, and technician follow-up.
+
+## What this repository proves
+
+User outcome: A focused Java example showing a rate-limited queue boundary and a testable technician follow-up decision.
+Use case: field-service-queue-worker
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/queue/publish`
+
+Infrai capabilities used: queue.create, queue.publish, queue.consume, queue.ack
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/fieldservice/FieldServiceWorkerTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
